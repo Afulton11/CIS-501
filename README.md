@@ -14,7 +14,7 @@ This repository is here so that my partner and I can work together, in-person or
         * For macOS/Linux/Windows -> [GitKraken](https://www.gitkraken.com/)
 
 3. Pull the repository.
-    * If using the terminal, type `git pull <branch-name>`
+    * If using the terminal, type `git pull`
        
 4. You can now edit/create files for the homework
 

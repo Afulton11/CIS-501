@@ -19,7 +19,7 @@ This repository is here so that my partner and I can work together, in-person or
        
 4. You can now edit/create files for the homework
 
-5. Once you have made a few commits, or are ready to push, dont forget to stage the files!
+5. Before making a commit, dont forget to stage the files!
     * To stage files in a terminal, type `git add <file-name>`
       * To check which files still need to be staged, use `git status`
 

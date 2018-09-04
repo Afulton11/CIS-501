@@ -5,6 +5,7 @@ This repository is here so that my partner and I can work together, in-person or
 
 1. Clone the repository to a desired location on your PC
     * If using a terminal, type `git clone https://github.com/Afulton11/CIS-501-HW.git`
+      * Remember to `cd` into the cloned directory.
 
 2. Checkout to the current homework's branch
     * i.e for homework 1, the branch is: `hw1-object-storage`

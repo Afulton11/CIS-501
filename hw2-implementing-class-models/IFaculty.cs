@@ -1,6 +1,9 @@
-public interface IFaculty
+namespace Homework
 {
-    string GetName();
+    public interface IFaculty
+    {
+        string GetName();
 
-    void AssignSection(Section assignedSection);
+        void AssignSection(Section assignedSection);
+    }
 }

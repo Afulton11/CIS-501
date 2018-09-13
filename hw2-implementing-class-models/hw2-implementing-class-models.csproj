@@ -40,6 +40,7 @@
     <Compile Include="Section.cs" />
     <Compile Include="Faculty.cs" />
     <Compile Include="IFaculty.cs" />
+    <Compile Include="Semester.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

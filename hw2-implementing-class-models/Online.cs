@@ -2,24 +2,15 @@ using System;
 
 namespace Homework
 {
-    public class Online
+    public class Online : Section
     {
-        private Semester sem;
-        private Course cour;
-        private Faculty teach;
-        private string num;
-        private int c;
 
         public Online(Semester semester, Course course, Faculty teacher, string number, int cap)
+            : base(semester, course, teacher, number, cap)
         {
-            sem = semester;
-            cour = course;
-            teach = teacher;
-            num = number;
-            c = cap;
         }
 
         public override string ToString()
-            => $"{c} section {num} ({cour.Title}) is being taught by {teach.GetName()} in {sem.Name}";
+            => $"{_course.Number} section {Number} ({_course.Title}) is being taught by {_faculty.GetName()} in {_semester.Name}";
     }
 }

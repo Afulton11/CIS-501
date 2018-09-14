@@ -1,3 +1,5 @@
+using System;
+
 namespace Homework
 {
     public class OnCampus

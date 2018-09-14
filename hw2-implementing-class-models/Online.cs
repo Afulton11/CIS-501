@@ -18,12 +18,6 @@ namespace Homework
         }
 
         public override string ToString()
-        {
-            return "Semester: " + sem.ToString() +
-                    "\nCourse: " + cour.ToString() +
-                    "\nFaculty: " + teach.ToString() +
-                    "\nNumber: " + num +
-                    "\nCap: " + c;
-        }
+            => $"{c} section {num} ({cour.Title}) is being taught by {teach.GetName()} in {sem.Name}";
     }
 }

@@ -4,12 +4,13 @@ namespace Homework
 {
     public class Faculty : IFaculty
     {
-        private IEnumerable<Section> _sections;
+        private ICollection<Section> _sections;
         private string _name;
 
         public Faculty(string name)
         {
             _name = name;
+            _sections = new List<Section>();
         }
 
         public void AssignSection(Section assignedSection)

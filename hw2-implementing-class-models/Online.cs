@@ -5,6 +5,9 @@ namespace Homework
     public class Online : Section
     {
 
+        /// <summary>
+        /// The Online Section extends Section.
+        /// </summary>
         public Online(Semester semester, Course course, Faculty teacher, string number, int cap)
             : base(semester, course, teacher, number, cap)
         {

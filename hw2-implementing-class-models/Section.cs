@@ -8,6 +8,10 @@ namespace Homework
         protected Faculty _faculty;
         protected Semester _semester;
 
+        /// <summary>
+        /// A Section contains 1 course and 1 faculty
+        /// It also is associated with only 1 Semester. 
+        /// </summary>
         public Section(Semester s, Course c, Faculty t, string num, int cap)
         {
             _semester = s;

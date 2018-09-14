@@ -5,6 +5,9 @@ namespace Homework
     public class OnCampus : Section
     {
 
+        /// <summary>
+        /// The OnCampus Section extends Section.
+        /// </summary>
         public OnCampus(Semester semester, Course course, Faculty teacher, string number, int cap)
             : base(semester, course, teacher, number, cap)
         {

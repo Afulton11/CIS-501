@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Homework
 {
+    /// <summary>
+    /// A Semester is associated with many sections
+    /// </summary>
     public class Semester
     {
         private ICollection<Section> _sections;

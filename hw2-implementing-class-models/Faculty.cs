@@ -7,6 +7,9 @@ namespace Homework
         private ICollection<Section> _sections;
         private string _name;
 
+        /// <summary>
+        /// A Faculty implements IFaculty
+        /// </summary>
         public Faculty(string name)
         {
             _name = name;

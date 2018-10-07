@@ -2,6 +2,6 @@
 {
     public interface IConsoleViewModel
     {
-        string ConsoleText { get; }
+        string ConsoleText { get; set; }
     }
 }

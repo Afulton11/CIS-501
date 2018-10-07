@@ -1,10 +1,5 @@
 ﻿using Project1.Entities;
-using Project1.Scheduler;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project1.Verification
 {
@@ -14,6 +9,7 @@ namespace Project1.Verification
         private IScheduleReader _scheduleReader;
 
         private Schedule _localSchedule, _remoteSchedule;
+        private string _localSchedulePath, _remoteSchedulePath;
 
         public VerificationManager(
             IScheduleReader scheduleReader,
@@ -23,11 +19,33 @@ namespace Project1.Verification
             _scheduleConstraints = scheduleConstraints;
         }
         
-        public string LocalSchedulePath { get; set; }
-        public string RemoteSchedulePath { get; set; }
+        public string LocalSchedulePath
+        {
+            get => _localSchedulePath;
+            set
+            {
+                if (value != _localSchedulePath)
+                {
+                    _localSchedulePath = value;
+                    if (!string.IsNullOrWhiteSpace(_localSchedulePath))
+                        LoadLocalSchedule();
+                }
+            }
+        }
 
-        public void LoadLocalSchedule() => _localSchedule = _scheduleReader.Read(LocalSchedulePath);
-        public void LoadRemoteSchedule() => _remoteSchedule = _scheduleReader.Read(RemoteSchedulePath);
+        public string RemoteSchedulePath
+        {
+            get => _remoteSchedulePath;
+            set
+            {
+                if (value != _remoteSchedulePath)
+                {
+                    _remoteSchedulePath = value;
+                    if (!string.IsNullOrWhiteSpace(_remoteSchedulePath))
+                        LoadRemoteSchedule();
+                }
+            }
+        }
 
         public void Verify()
         {
@@ -35,5 +53,7 @@ namespace Project1.Verification
                 constraint.Verify(_localSchedule, _remoteSchedule);
         }
 
+        private void LoadLocalSchedule() => _localSchedule = _scheduleReader.Read(LocalSchedulePath);
+        private void LoadRemoteSchedule() => _remoteSchedule = _scheduleReader.Read(RemoteSchedulePath);
     }
 }

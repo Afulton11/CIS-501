@@ -1,4 +1,4 @@
-﻿namespace Project1.Scheduler
+﻿namespace Project1.Scheduler.Console
 {
     public interface IConsoleViewModel
     {

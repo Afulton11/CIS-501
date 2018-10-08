@@ -51,7 +51,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\MeetingDays.cs" />
+    <Compile Include="Entities\Schedule.cs" />
+    <Compile Include="Entities\SISClass.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Scheduler\IConsoleViewModel.cs" />
     <Compile Include="Scheduler\ISchedulerView.cs" />
     <Compile Include="Scheduler\SchedulerPresenter.cs" />
     <Compile Include="Scheduler\SchedulerView.xaml.cs">
@@ -60,6 +64,11 @@
     <Compile Include="Scheduler\SchedulerViewModel.cs" />
     <Compile Include="Utility\BasePropertyChanged.cs" />
     <Compile Include="Utility\RelayCommand.cs" />
+    <Compile Include="Verification\CSVScheduleReader.cs" />
+    <Compile Include="Verification\Constraints\IScheduleConstraint.cs" />
+    <Compile Include="Verification\IScheduleReader.cs" />
+    <Compile Include="Verification\Constraints\ScheduleConstraint.cs" />
+    <Compile Include="Verification\VerificationManager.cs" />
     <Page Include="Scheduler\SchedulerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,8 +100,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Verification\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

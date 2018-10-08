@@ -1,14 +1,8 @@
 ﻿using Project1.Utility;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project1.Scheduler
 {
-    public sealed class SchedulerViewModel : BasePropertyChanged
+    public sealed class SchedulerViewModel : BasePropertyChanged, IConsoleViewModel
     {
         private string _consoleText;
         private string _localSchedulePath;

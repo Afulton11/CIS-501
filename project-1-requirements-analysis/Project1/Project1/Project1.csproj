@@ -55,7 +55,8 @@
     <Compile Include="Entities\Schedule.cs" />
     <Compile Include="Entities\SISClass.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Scheduler\IConsoleViewModel.cs" />
+    <Compile Include="Scheduler\Console\ConsoleViewModelExtensions.cs" />
+    <Compile Include="Scheduler\Console\IConsoleViewModel.cs" />
     <Compile Include="Scheduler\ISchedulerView.cs" />
     <Compile Include="Scheduler\SchedulerPresenter.cs" />
     <Compile Include="Scheduler\SchedulerView.xaml.cs">
@@ -64,6 +65,9 @@
     <Compile Include="Scheduler\SchedulerViewModel.cs" />
     <Compile Include="Utility\BasePropertyChanged.cs" />
     <Compile Include="Utility\RelayCommand.cs" />
+    <Compile Include="Verification\Constraints\LocalSectionsRequired.cs" />
+    <Compile Include="Verification\Constraints\LocalSectionsShouldNotDiffer.cs" />
+    <Compile Include="Verification\Constraints\RemoteSectionsRequired.cs" />
     <Compile Include="Verification\CSVScheduleReader.cs" />
     <Compile Include="Verification\Constraints\IScheduleConstraint.cs" />
     <Compile Include="Verification\IScheduleReader.cs" />

@@ -23,10 +23,11 @@ namespace designassessment
             return 0;
         }
 
-		void UpdateGenus(Genus genus)
-		{
-			// Change genus of Fruit
-			// ...code goes here
-			// ......
-		}
+        void UpdateGenus(Genus genus)
+        {
+            // Change genus of Fruit
+            // ...code goes here
+            // ......
+        }
+    }
 }

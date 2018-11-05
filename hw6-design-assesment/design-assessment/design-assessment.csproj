@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -27,8 +26,24 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Fruit.cs" />
-    <Compile Include="FruitRepository.cs" />
+    <Compile Include="Fruit\Fruit.cs" />
+    <Compile Include="Fruit\FruitRepository.cs" />
+    <Compile Include="Clients\GoldClient.cs" />
+    <Compile Include="Clients\PlatinumClient.cs" />
+    <Compile Include="Clients\RebateClient.cs" />
+    <Compile Include="Clients\Accounts\StarAccount.cs" />
+    <Compile Include="Clients\Accounts\RebateAccount.cs" />
+    <Compile Include="Clients\Client.cs" />
+    <Compile Include="Clients\PotentialClient.cs" />
+    <Compile Include="Enrollment\IEnrollment.cs" />
+    <Compile Include="Enrollment\EnrollmentTypeOne.cs" />
+    <Compile Include="Enrollment\EnrollmentTypeOther.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fruit\" />
+    <Folder Include="Clients\" />
+    <Folder Include="Clients\Accounts\" />
+    <Folder Include="Enrollment\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

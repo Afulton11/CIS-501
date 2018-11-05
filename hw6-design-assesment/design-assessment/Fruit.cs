@@ -23,19 +23,10 @@ namespace designassessment
             return 0;
         }
 
-        void UpdateGenus(Genus genus)
-        {
-            // Change genus of Fruit
-            // ...code goes here
-            // ......
-        }
-
-        int update_Fruit_database(DatabaseHandler db)
-        {
-            // Update shape of Fruit in database
-            // ...............
-            // ........
-            return 0;
-        }
-    }
+		void UpdateGenus(Genus genus)
+		{
+			// Change genus of Fruit
+			// ...code goes here
+			// ......
+		}
 }

@@ -1,0 +1,59 @@
+Spring 2019,,,,,,,,,,,,,,,,,,,,,,
+Subject,CatalogNbr,ClassDescr,Section,Instructor,Consent,EnrlCap,TopicDescr,MeetingStartDt,MeetingEndDt,FacilityId,MeetingTimeStart,MeetingTimeEnd,Mon,Tues,Wed,Thurs,Fri,Sat,Sun,UnitsMin,UnitsMax,ClassAssnComponent
+CIS,111,Intro to Comp Program,A,"Thornton,Julie A",No Special Consent Required,28, ,1/22/2019,3/8/2019,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,111,Intro to Comp Program,B,"Thornton,Julie A",No Special Consent Required,27, ,3/18/2019,5/10/2019,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,111,Intro to Comp Program,ZA,"Thornton,Julie A",No Special Consent Required,30, ,1/22/2019,3/8/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,111,Intro to Comp Program,ZB,"Thornton,Julie A",No Special Consent Required,35, ,3/18/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,115,Intro to Computing Science,A,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,B,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,2:30 PM,3:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,C,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,11:00 AM,12:15 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,200,Programming Fundamentals,01L,"Lang,Dennis J",No Special Consent Required,185, ,1/22/2019,5/10/2019,DUR1073,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,0,0, 
+CIS,200,Programming Fundamentals,A,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,2:30 PM,4:20 PM,N,N,N,Y,N,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,B,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,4:30 PM,6:20 PM,N,N,N,Y,N,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,C,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,3:30 PM,5:20 PM,N,N,N,N,Y,N,N,4,4,LAB
+CIS,209,C Programming/Engg,A,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1114,8:05 AM,10:55 AM,N,Y,N,N,N,N,N,3,3,LAB
+CIS,209,C Programming/Engg,B,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1114,2:30 PM,5:20 PM,N,Y,N,N,N,N,N,3,3,LAB
+CIS,209,C Programming/Engg,ZA,"Valenzuela,Jorge Luis",No Special Consent Required,50, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,300,Data & Program Struct,01L,"Thornton,Julie A",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1116,10:30 AM,11:20 AM,Y,N,Y,N,N,N,N,0,0, 
+CIS,300,Data & Program Struct,A,"Howell,Rodney R",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,10:30 AM,12:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,300,Data & Program Struct,B,"Howell,Rodney R",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,1:30 PM,3:20 PM,Y,N,Y,N,Y,N,N,3,3,LAB
+CIS,300,Data & Program Struct,S,"Thornton,Julie A",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1117,10:30 AM,12:20 PM,N,N,N,N,Y,N,N,3,3,LAB
+CIS,301,Logical Terror,B,"Amtoft,Torben",No Special Consent Required,100, ,1/22/2019,5/10/2019,DUR1073,11:30 AM,12:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,308,C Language Lab,A,"Weese,Joshua Levi",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,3:30 PM,5:20 PM,Y,N,N,N,N,N,N,1,1,LAB
+CIS,308,C Language Lab,B,"Weese,Joshua Levi",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,3:30 PM,5:20 PM,N,N,Y,N,N,N,N,1,1,LAB
+CIS,415,Ethics and Computing Tech,ZA,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,1,1,REC
+CIS,450,Cmptr Arch/Operation,A,"Neilsen,Mitchell L",No Special Consent Required,53, ,1/22/2019,5/10/2019,DUE1114,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,450,Cmptr Arch/Operation,B,"Mizuno,Masaaki",No Special Consent Required,53, ,1/22/2019,5/10/2019,DUE1114,12:30 PM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,501,Software Arch/Design,A,"Valenzuela,Jorge Luis",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,11:30 AM,12:45 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,501,Software Arch/Design,B,"Valenzuela,Jorge Luis",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,520,Operating Systems I,A,"Mizuno,Masaaki",No Special Consent Required,100, ,1/22/2019,5/10/2019,K004,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,526,Web Interface Design,A,"Bean,Nathan H",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1117,11:30 AM,12:45 PM,N,Y,N,Y,N,N,N,3,3,IND
+CIS,536,Intro to Computer Graphics,A,"Hsu,William Henry",No Special Consent Required,15,,1/22/2019,5/10/2019,DUE1116,12:30 PM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,553,Fund Cryptography,A,"Amariucai,George",No Special Consent Required,31, ,1/22/2019,5/10/2019,DUE1116,1:30 PM,2:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,560,Database Syst Concep,A,"Keller,John T",No Special Consent Required,100, ,1/22/2019,5/10/2019,DUF1107,8:30 AM,9:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,562,Enterprise Info Syst,A,"Keller,John T",No Special Consent Required,20, ,1/22/2019,5/10/2019,DUF1107,8:30 AM,9:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,575,Intro Algorithm Anly,A,"Amtoft,Torben",No Special Consent Required,100, ,1/22/2019,5/10/2019,DUR1073,2:30 PM,3:20 PM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,595,IS Cooperative Internship,A,"Weese,Joshua Levi",Instructor Consent Required,30, ,1/22/2019,5/10/2019, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,4,INT
+CIS,597,Info Systems Project,A,"Neilsen,Mitchell L",No Special Consent Required,10, ,1/22/2019,5/10/2019,,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,597,Info Systems Project,B,"Neilsen,Mitchell L",No Special Consent Required,10, ,1/22/2019,5/10/2019,DUR1069,3:30 PM,4:20 PM,Y,N,Y,N,Y,N,N,3,3,IND
+CIS,598,Computer Sci Project,A,"Neilsen,Mitchell L",No Special Consent Required,5, ,1/22/2019,5/10/2019,,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,598,Computer Sci Project,B,"Neilsen,Mitchell L",No Special Consent Required,35, ,1/22/2019,5/10/2019,DUR1063,3:30 PM,4:20 PM,Y,N,Y,N,Y,N,N,3,3,IND
+CIS,640,Software Test Tech,A,"Weese,Joshua Levi",No Special Consent Required,60, ,1/22/2019,5/10/2019,DUE0093,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,640,Software Test Tech,ZA,"Weese,Joshua Levi",No Special Consent Required,25, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,643,Software Engg Proj 2,A,"Bean,Nathan H",No Special Consent Required,35, ,1/22/2019,5/10/2019,ZZZZZZ,4:05 PM,5:20 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,643,Software Engg Proj 2,A,"DeLoach,Scott A",No Special Consent Required,35, ,1/22/2019,5/10/2019,ZZZZZZ,4:05 PM,5:20 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,722,Op Syst Practices,A,"Mizuno,Masaaki",No Special Consent Required,25, ,1/22/2019,5/10/2019,DUE1116,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,732,Mach Lrn/Pattern Rn,A,"Hsu,William Henry",No Special Consent Required,28, ,1/22/2019,5/10/2019,DUE0097,10:30 AM,11:20 AM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,732,Mach Lrn/Pattern Rn,ZA,"Hsu,William Henry",No Special Consent Required,25, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,732,Mach Lrn/Pattern Rn,ZB,"Hsu,William Henry",No Special Consent Required,25, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,736,Computer Graphics,A,"Hsu,William Henry",No Special Consent Required,15,,1/22/2019,5/10/2019,DUE1116,12:30 PM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,744,Adv Sftware Analy/Ds,A,"Trump, Donald",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1116,9:30 AM,10:20 AM,N,N,N,N,Y,N,N,3,3,REC
+CIS,744,Adv Sftware Analy/Ds,ZA,"Trump, Donald",No Special Consent Required,20, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,750,Adv Comp Arch,A,"Munir,Arslan",No Special Consent Required,30, ,1/22/2019,5/10/2019,BB2103,5:30 PM,6:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,753,Applied Cryptography,A,"Amariucai,George",No Special Consent Required,10, ,1/22/2019,5/10/2019,DUE1116,1:30 PM,2:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,755,Systems Security,A,"Vasserman,Eugene Y",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,755,Systems Security,ZA,"Vasserman,Eugene Y",No Special Consent Required,25, ,1/22/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,761,Data Base Mgmt Systm,A,"Caragea,Doina",No Special Consent Required,25, ,1/22/2019,5/10/2019,DUF2144,11:00 AM,12:15 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,770,Formal Language Thry,A,"Prabhakar,Pavithra",No Special Consent Required,20, ,1/22/2019,5/10/2019,DUR1061,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,830,Current Topics AI,A,"Hsu,William Henry",No Special Consent Required,15,,1/22/2019,5/10/2019, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,LEC
+CIS,855,High Assurance Software,A,"Hatcliff,John",No Special Consent Required,20,,1/22/2019,5/10/2019,DUE3099A,2:30 PM,3:45 PM,N,Y,N,Y,N,N,N,3,3,REC

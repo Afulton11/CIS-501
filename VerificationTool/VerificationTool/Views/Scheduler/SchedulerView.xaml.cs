@@ -27,7 +27,5 @@ namespace VerificationTool.Views.Scheduler
         public ICommand ClearCommand { get; set; }
         public ICommand ReloadCommand { get; set; }
 
-        
-
     }
 }

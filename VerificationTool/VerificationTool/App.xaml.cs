@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
+using VerificationTool.Views.Scheduler;
 
 namespace VerificationTool
 {
@@ -13,5 +9,28 @@ namespace VerificationTool
     /// </summary>
     public partial class App : Application
     {
+        App()
+        {
+            InitializeComponent();
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            App app = new App();
+            ISchedulerViewModel viewModel = new SchedulerViewModel();
+            SchedulerView view = new SchedulerView(viewModel);
+            SchedulerPresenter presenter = new SchedulerPresenter(
+                viewModel,
+                view,
+                title => new Microsoft.Win32.OpenFileDialog()
+                {
+                    Filter = "CSV Files (*.csv)|*.csv",
+                    Title = title,
+                    Multiselect = false,
+                });
+
+            app.Run(view);
+        }
     }
 }

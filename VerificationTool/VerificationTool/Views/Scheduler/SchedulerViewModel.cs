@@ -1,4 +1,6 @@
-﻿namespace VerificationTool.Views.Scheduler
+﻿using VerificationTool.utilities;
+
+namespace VerificationTool.Views.Scheduler
 {
     public class SchedulerViewModel : BasePropertyChanged, ISchedulerViewModel
     {
@@ -18,5 +20,7 @@
             get => _consoleText;
             set => SetProperty(ref _consoleText, value);
         }
+
+        public void WriteLine(string line) => ConsoleText = StringUtility.AddLine(ConsoleText, line);
     }
 }

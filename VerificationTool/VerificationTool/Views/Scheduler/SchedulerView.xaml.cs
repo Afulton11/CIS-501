@@ -23,7 +23,7 @@ namespace VerificationTool.Views.Scheduler
             ClearCommand = new RelayCommand(sender => ClearEvent.Invoke(sender, null));
             ReloadCommand = new RelayCommand(sender => ReloadEvent.Invoke(sender, null));
             LoadLocalScheduleCommand = new RelayCommand(sender => LoadLocalScheduleEvent.Invoke(sender, null));
-            VerifySchedulesCommand = new RelayCommand(sender => VerifySchedulesEvent.Invoke(sender, null));
+            VerifySchedulesCommand = new RelayCommand(sender => VerifySchedulesEvent.Invoke(sender, null), _ => CanVerifySchedules());
 
             InitializeComponent();
         }
@@ -34,6 +34,8 @@ namespace VerificationTool.Views.Scheduler
         public ICommand ReloadCommand { get; }
         public ICommand LoadLocalScheduleCommand { get; }
         public ICommand VerifySchedulesCommand { get; }
+
+        private bool CanVerifySchedules() => !string.IsNullOrEmpty(ViewModel.LocalPath);
 
         private void OnAbout() => ViewModel.ConsoleText = StringUtility.AddLine(ViewModel.ConsoleText, "SVT Version 0.2.3. Last updated on 12/5/2018. Thanks for using SVT!");
     }

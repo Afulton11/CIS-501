@@ -61,7 +61,11 @@
     <Compile Include="Entities\Section.cs" />
     <Compile Include="Entities\Semester.cs" />
     <Compile Include="utilities\StringUtility.cs" />
+    <Compile Include="Verification\Constraints\Impl\LocalSectionsRequired.cs" />
+    <Compile Include="Verification\Constraints\Impl\RemoteSectionsRequired.cs" />
+    <Compile Include="Verification\Constraints\Impl\SectionsShouldNotDiffer.cs" />
     <Compile Include="Verification\Constraints\IScheduleConstraint.cs" />
+    <Compile Include="Verification\Constraints\ScheduleConstraint.cs" />
     <Compile Include="Verification\Readers\CSVScheduleReader.cs" />
     <Compile Include="Verification\Readers\Exceptions\InvalidFileFormatException.cs" />
     <Compile Include="Verification\Readers\IScheduleReader.cs" />

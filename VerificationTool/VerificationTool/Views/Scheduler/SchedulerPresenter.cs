@@ -1,5 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using VerificationTool.Entities;
+using VerificationTool.Verification.Constraints;
 using VerificationTool.Verification.Readers;
 
 namespace VerificationTool.Views.Scheduler
@@ -9,16 +13,21 @@ namespace VerificationTool.Views.Scheduler
         private readonly ISchedulerViewModel viewModel;
         private readonly Func<string, OpenFileDialog> openFileDialog;
         private readonly IScheduleReader scheduleReader;
+        private readonly IEnumerable<IScheduleConstraint> scheduleConstraints;
+
+        private Semester localSchedule, remoteSchedule;
 
         public SchedulerPresenter(
             ISchedulerViewModel viewModel,
             ISchedulerView view,
             Func<string, OpenFileDialog> openFileDialog,
-            IScheduleReader scheduleReader)
+            IScheduleReader scheduleReader,
+            IEnumerable<IScheduleConstraint> scheduleConstraints)
         {
             this.viewModel = viewModel;
             this.openFileDialog = openFileDialog;
             this.scheduleReader = scheduleReader;
+            this.scheduleConstraints = scheduleConstraints;
 
             SubscribeToView(view);
         }
@@ -35,6 +44,8 @@ namespace VerificationTool.Views.Scheduler
 
         private void OnClear()
         {
+            localSchedule = null;
+            remoteSchedule = null;
             viewModel.LocalPath = "";
             viewModel.RemotePath = "";
         }
@@ -42,40 +53,50 @@ namespace VerificationTool.Views.Scheduler
         private void OnReload()
         {
             viewModel.WriteLine("OnReload();");
+            localSchedule = ReadSchedule(viewModel.LocalPath);
+            remoteSchedule = ReadSchedule(viewModel.RemotePath);
+
+            if (localSchedule != null && remoteSchedule != null)
+                VerifySchedules();
         }
 
         private void OnLoadLocalSchedule()
         {
             var localFilepath = RetrieveFilepath("Choose a Remote File");
+            var schedule = ReadSchedule(localFilepath);
 
-            if (WasFileChosen(localFilepath))
-                viewModel.RemotePath = localFilepath;
-            else
+            if (schedule != null)
             {
-                viewModel.WriteLine("[ERROR]: You didn't select a valid local filepath.");
-                return;
+                localSchedule = schedule;
+                viewModel.RemotePath = localFilepath;
             }
         }
 
         private void OnVerifySchedules()
         {
-            var localFilepath = RetrieveFilepath("Choose a Remote File");
+            var remoteFilepath = RetrieveFilepath("Choose a Remote File");                
+            var schedule = ReadSchedule(remoteFilepath);
 
-            if (WasFileChosen(localFilepath))
-                viewModel.RemotePath = localFilepath;
-            else
+            if (schedule != null)
             {
-                viewModel.WriteLine("[ERROR]: Please choose a remote file path before verifying a schedule.");
-                return;
+                remoteSchedule = schedule;
+                viewModel.RemotePath = remoteFilepath;
+                VerifySchedules();
             }
         }
 
-        private object LoadFile(string filepath)
+        private Semester ReadSchedule(string filepath)
         {
-            return null;
+            if (IsValidFile(filepath))
+                return scheduleReader.Read(filepath);
+            else
+            {
+                viewModel.WriteLine("[ERROR]: Please select a valid file.");
+                return null;
+            }
         }
 
-        private bool WasFileChosen(string filepath) => !string.IsNullOrEmpty(filepath);
+        private bool IsValidFile(string filepath) => !string.IsNullOrEmpty(filepath) && File.Exists(filepath);
 
         private string RetrieveFilepath(string title)
         {
@@ -87,6 +108,22 @@ namespace VerificationTool.Views.Scheduler
                 return dialog.FileName;
 
             return null;
+        }
+
+        private void VerifySchedules()
+        {
+            bool DidError = false;
+            foreach (var constraint in scheduleConstraints)
+            {
+                if (!constraint.Verify(localSchedule, remoteSchedule))
+                {
+                    viewModel.WriteLine(constraint.Error);
+                    DidError = true;
+                }
+            }
+
+            if (!DidError)
+                viewModel.WriteLine("The local and remote schedules were successfully verified!");
         }
     }
 }

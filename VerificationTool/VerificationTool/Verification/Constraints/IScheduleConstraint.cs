@@ -1,7 +1,10 @@
-﻿namespace VerificationTool.Verification.Constraints
+﻿using VerificationTool.Entities;
+
+namespace VerificationTool.Verification.Constraints
 {
     public interface IScheduleConstraint
     {
-        bool Verify();
+        bool Verify(Semester local, Semester remote);
+        string Error { get; }
     }
 }

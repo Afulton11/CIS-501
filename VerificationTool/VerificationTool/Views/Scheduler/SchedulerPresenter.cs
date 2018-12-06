@@ -1,20 +1,25 @@
 ﻿using Microsoft.Win32;
 using System;
+using VerificationTool.Verification.Readers;
 
 namespace VerificationTool.Views.Scheduler
 {
     public class SchedulerPresenter
     {
-        private readonly ISchedulerViewModel _viewModel;
-        private readonly Func<string, OpenFileDialog> _openFileDialog;
+        private readonly ISchedulerViewModel viewModel;
+        private readonly Func<string, OpenFileDialog> openFileDialog;
+        private readonly IScheduleReader scheduleReader;
 
         public SchedulerPresenter(
             ISchedulerViewModel viewModel,
             ISchedulerView view,
-            Func<string, OpenFileDialog> openFileDialog)
+            Func<string, OpenFileDialog> openFileDialog,
+            IScheduleReader scheduleReader)
         {
-            _viewModel = viewModel;
-            _openFileDialog = openFileDialog;
+            this.viewModel = viewModel;
+            this.openFileDialog = openFileDialog;
+            this.scheduleReader = scheduleReader;
+
             SubscribeToView(view);
         }
 
@@ -30,13 +35,13 @@ namespace VerificationTool.Views.Scheduler
 
         private void OnClear()
         {
-            _viewModel.LocalPath = "";
-            _viewModel.RemotePath = "";
+            viewModel.LocalPath = "";
+            viewModel.RemotePath = "";
         }
 
         private void OnReload()
         {
-            _viewModel.WriteLine("OnReload();");
+            viewModel.WriteLine("OnReload();");
         }
 
         private void OnLoadLocalSchedule()
@@ -44,10 +49,10 @@ namespace VerificationTool.Views.Scheduler
             var localFilepath = RetrieveFilepath("Choose a Remote File");
 
             if (WasFileChosen(localFilepath))
-                _viewModel.RemotePath = localFilepath;
+                viewModel.RemotePath = localFilepath;
             else
             {
-                _viewModel.WriteLine("[ERROR]: You didn't select a valid local filepath.");
+                viewModel.WriteLine("[ERROR]: You didn't select a valid local filepath.");
                 return;
             }
         }
@@ -57,10 +62,10 @@ namespace VerificationTool.Views.Scheduler
             var localFilepath = RetrieveFilepath("Choose a Remote File");
 
             if (WasFileChosen(localFilepath))
-                _viewModel.RemotePath = localFilepath;
+                viewModel.RemotePath = localFilepath;
             else
             {
-                _viewModel.WriteLine("[ERROR]: Please choose a remote file path before verifying a schedule.");
+                viewModel.WriteLine("[ERROR]: Please choose a remote file path before verifying a schedule.");
                 return;
             }
         }
@@ -74,7 +79,7 @@ namespace VerificationTool.Views.Scheduler
 
         private string RetrieveFilepath(string title)
         {
-            var dialog = _openFileDialog(title);
+            var dialog = openFileDialog(title);
 
             bool? dialogResult = dialog.ShowDialog();
 

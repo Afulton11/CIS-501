@@ -26,22 +26,6 @@ namespace VerificationTool.utilities
             return -1;
         }
 
-        public static string ScheduleToString(Schedule schedule)
-        {
-            var builder = new StringBuilder();
-
-            builder.AppendLine($"{schedule.Semester.Name} {schedule.Semester.Year}");
-
-            foreach (var course in schedule.Courses)
-                foreach (var section in course.Sections)
-                {
-                    builder.AppendLine($"Section {course.Subject} {course.CatalogNbr} Section {section.SectionNumber}");
-                }
-
-            return builder.ToString();
-        }
-
-
         public static StringBuilder BuildSectionStringPrefix(Course course, string sectionNumber)
         {
             var builder = new StringBuilder();

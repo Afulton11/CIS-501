@@ -63,8 +63,6 @@
     <Compile Include="Entities\Semester.cs" />
     <Compile Include="utilities\StringUtility.cs" />
     <Compile Include="Verification\Comparers\CourseComparer.cs" />
-    <Compile Include="Verification\Comparers\FacilityComparer.cs" />
-    <Compile Include="Verification\Comparers\InstructorComparer.cs" />
     <Compile Include="Verification\Comparers\SectionComparer.cs" />
     <Compile Include="Verification\Comparers\SimpleCourseComparer.cs" />
     <Compile Include="Verification\Comparers\SimpleFacilityComparer.cs" />

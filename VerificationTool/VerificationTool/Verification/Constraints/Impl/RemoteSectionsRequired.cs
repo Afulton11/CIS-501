@@ -8,9 +8,9 @@ namespace VerificationTool.Verification.Constraints.Impl
 {
     public class RemoteSectionsRequired : ScheduleConstraint
     {
-        private SectionErrorMessage errorMessage = new SectionErrorMessage("not found in current semester!");
-        private IDictionary<Course, IEnumerable<string>> localCourseMap = new Dictionary<Course, IEnumerable<string>>(CourseComparer.Instance);
-        private IDictionary<Course, IEnumerable<string>> remoteCourseMap = new Dictionary<Course, IEnumerable<string>>(CourseComparer.Instance);
+        private SectionErrorMessage errorMessage = new SectionErrorMessage("<<", "not found in current semester!");
+        private IDictionary<Course, IEnumerable<string>> localCourseMap = new Dictionary<Course, IEnumerable<string>>(SimpleCourseComparer.Instance);
+        private IDictionary<Course, IEnumerable<string>> remoteCourseMap = new Dictionary<Course, IEnumerable<string>>(SimpleCourseComparer.Instance);
 
         protected override string getErrorMessage() => errorMessage.ToString();
 
@@ -43,7 +43,7 @@ namespace VerificationTool.Verification.Constraints.Impl
             }
         }
 
-        private bool DoesSectionExistLocally(Course remoteCourse, string remoteSectionNumber) => 
+        private bool DoesSectionExistLocally(Course remoteCourse, string remoteSectionNumber) =>
             localCourseMap.ContainsKey(remoteCourse)
             && localCourseMap[remoteCourse].Any(localSectionNumber => localSectionNumber == remoteSectionNumber);
        

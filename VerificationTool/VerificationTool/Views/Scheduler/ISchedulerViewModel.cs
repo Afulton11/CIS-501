@@ -5,7 +5,5 @@
         string LocalPath { get; set; }
         string RemotePath { get; set; }
         string ConsoleText { get; set; }
-
-        void WriteLine(string line);
     }
 }

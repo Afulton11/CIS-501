@@ -1,4 +1,5 @@
-﻿using VerificationTool.Entities;
+﻿using System;
+using VerificationTool.Entities;
 
 namespace VerificationTool.Verification.Constraints
 {
@@ -12,6 +13,7 @@ namespace VerificationTool.Verification.Constraints
                 return true;
             else
             {
+                Console.WriteLine("Error during verification ");
                 Error = getErrorMessage();
                 return false;
             }

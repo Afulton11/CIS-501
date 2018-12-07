@@ -44,8 +44,8 @@ namespace VerificationTool
 
         static IEnumerable<IScheduleConstraint> GetScheduleConstraints()
         {
-            yield return new LocalSectionsRequired();
             yield return new RemoteSectionsRequired();
+            yield return new LocalSectionsRequired();
             yield return new SectionsShouldNotDiffer();
         }
 

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using VerificationTool.Entities;
 
 namespace VerificationTool.Verification.Comparers
@@ -15,7 +16,10 @@ namespace VerificationTool.Verification.Comparers
         private CourseComparer() { }
 
 
-        public override bool Equals(Course x, Course y) => x.Subject == y.Subject && x.CatalogNbr == y.CatalogNbr;
+        public override bool Equals(Course x, Course y) => 
+            x.Subject == y.Subject
+            && x.CatalogNbr == y.CatalogNbr
+            && x.Sections.Any(xSection => y.Sections.Any(ySection => SectionComparer.Instance.Equals(xSection, ySection)));
 
         public override int GetHashCode(Course obj) => obj.Subject.GetHashCode() + obj.CatalogNbr.GetHashCode();
     }

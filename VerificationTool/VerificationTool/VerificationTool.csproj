@@ -66,6 +66,9 @@
     <Compile Include="Verification\Comparers\FacilityComparer.cs" />
     <Compile Include="Verification\Comparers\InstructorComparer.cs" />
     <Compile Include="Verification\Comparers\SectionComparer.cs" />
+    <Compile Include="Verification\Comparers\SimpleCourseComparer.cs" />
+    <Compile Include="Verification\Comparers\SimpleFacilityComparer.cs" />
+    <Compile Include="Verification\Comparers\SimpleInstructorComparer.cs" />
     <Compile Include="Verification\Constraints\Impl\Errors\SectionErrorMessage.cs" />
     <Compile Include="Verification\Constraints\Impl\LocalSectionsRequired.cs" />
     <Compile Include="Verification\Constraints\Impl\RemoteSectionsRequired.cs" />

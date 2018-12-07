@@ -1,0 +1,122 @@
+Fall 2018,,,,,,,,,,,,,,,,,,,,,,
+Subject,CatalogNbr,ClassDescr,Section,Instructor,Consent,EnrlCap,TopicDescr,MeetingStartDt,MeetingEndDt,FacilityId,MeetingTimeStart,MeetingTimeEnd,Mon,Tues,Wed,Thurs,Fri,Sat,Sun,UnitsMin,UnitsMax,ClassAssnComponent
+CIS,15,Sem/Undergraduate,A,"Cornell,Sheryl A",No Special Consent Required,250, ,8/20/2018,12/7/2018,DUE1109,5:30 PM,6:20 PM,N,N,Y,N,N,N,N,0,0,SEM
+CIS,18,CS Prof Dev Seminar,A,"DeLoach,Scott A",No Special Consent Required,500,,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,0,0,ACT
+CIS,90,CIS Scholars Seminar,A,"Howell,Rodney R",No Special Consent Required,100, ,8/20/2018,12/7/2018,DUF1107,3:30 PM,4:45 PM,N,N,N,N,Y,N,N,0,0,SEM
+CIS,101,Intro to Computing Systems,A,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,10/12/2018,DUE1113,2:30 PM,3:20 PM,N,N,Y,N,N,N,N,1,1,LEC
+CIS,101,Intro to Computing Systems,B,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,10/12/2018,DUE1113,1:30 PM,2:20 PM,N,N,Y,N,N,N,N,1,1,LEC
+CIS,101,Intro to Computing Systems,ZA,"Lang,Dennis J",No Special Consent Required,75, ,8/20/2018,10/12/2018,DISTANCE,,,N,N,N,N,N,N,N,1,1,LEC
+CIS,102,Intro to Spreadsheet Appl,A,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,10/12/2018,DUE1113,2:30 PM,3:20 PM,Y,N,N,N,N,N,N,1,1,LEC
+CIS,102,Intro to Spreadsheet Appl,B,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,10/12/2018,DUE1113,3:30 PM,4:20 PM,Y,N,N,N,N,N,N,1,1,LEC
+CIS,102,Intro to Spreadsheet Appl,ZA,"Lang,Dennis J",No Special Consent Required,75, ,8/20/2018,10/12/2018,DISTANCE,,,N,N,N,N,N,N,N,1,1,LEC
+CIS,103,Intro to Database Appl,A,"Lang,Dennis J",No Special Consent Required,30, ,10/15/2018,12/7/2018,DUE1113,2:30 PM,3:20 PM,Y,N,N,N,N,N,N,1,1,LEC
+CIS,103,Intro to Database Appl,B,"Lang,Dennis J",No Special Consent Required,30, ,10/15/2018,12/7/2018,DUE1113,3:30 PM,4:20 PM,Y,N,N,N,N,N,N,1,1,LEC
+CIS,103,Intro to Database Appl,ZA,"Lang,Dennis J",No Special Consent Required,75, ,10/15/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,1,1,LEC
+CIS,104,Intro to Word Processing Appl,A,"Lang,Dennis J",No Special Consent Required,30, ,10/15/2018,12/7/2018,DUE1113,2:30 PM,3:20 PM,N,N,Y,N,N,N,N,1,1,LEC
+CIS,104,Intro to Word Processing Appl,B,"Lang,Dennis J",No Special Consent Required,30, ,10/15/2018,12/7/2018,DUE1113,1:30 PM,2:20 PM,N,N,Y,N,N,N,N,1,1,LEC
+CIS,104,Intro to Word Processing Appl,ZA,"Lang,Dennis J",No Special Consent Required,75, ,10/15/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,1,1,LEC
+CIS,111,Intro to Computer Programming,A,"Thornton,Julie A",No Special Consent Required,30, ,8/20/2018,10/12/2018,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,111,Intro to Computer Programming,B,"Thornton,Julie A",No Special Consent Required,30, ,10/15/2018,12/7/2018,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,111,Intro to Computer Programming,ZA,"Thornton,Julie A",No Special Consent Required,30, ,8/20/2018,10/12/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,111,Intro to Computer Programming,ZB,"Thornton,Julie A",No Special Consent Required,35, ,10/15/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,115,Intro to Computing Science,A,"Weese,Joshua Levi",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,9:30 AM,10:45 AM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,C,"Weese,Joshua Levi",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,2:30 PM,3:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,D,"Weese,Joshua Levi",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,3:55 PM,5:10 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,E,"Weese,Joshua Levi",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,115,Intro to Computing Science,S,"Bean,Nathan H",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1116,1:00 PM,2:15 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,200,Programming Fundamentals,01L,"Thornton,Julie A",No Special Consent Required,120, ,8/20/2018,12/7/2018,DUE1109,11:30 AM,12:45 PM,N,Y,N,Y,N,N,N,0,0,LEC
+CIS,200,Programming Fundamentals,02L,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1117,10:30 AM,11:45 AM,Y,N,Y,N,N,N,N,0,0,LEC
+CIS,200,Programming Fundamentals,B,"Thornton,Julie A",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,1:00 PM,2:50 PM,N,N,N,Y,N,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,D,"Thornton,Julie A",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,3:00 PM,4:50 PM,N,N,N,Y,N,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,E,"Thornton,Julie A",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,3:30 PM,5:20 PM,N,N,N,N,Y,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,S,"Lang,Dennis J",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1117,10:30 AM,12:20 PM,N,N,N,N,Y,N,N,4,4,LAB
+CIS,209,C Programming/Engg,A,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1117,2:30 PM,4:20 PM,N,N,N,N,Y,N,N,3,3,LAB
+CIS,209,C Programming/Engg,B,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1114,3:30 PM,5:20 PM,N,N,Y,N,N,N,N,3,3,LAB
+CIS,209,C Programming/Engg,C,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1114,5:00 PM,6:50 PM,N,Y,N,N,N,N,N,3,3,LAB
+CIS,209,C Programming/Engg,ZA,"Valenzuela,Jorge Luis",No Special Consent Required,50, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
+CIS,300,Data & Program Struct,A,"Howell,Rodney R",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,9:30 AM,11:20 AM,Y,N,Y,N,Y,N,N,3,3,LAB
+CIS,300,Data & Program Struct,B,"Weese,Joshua Levi",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,11:30 AM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,LAB
+CIS,300,Data & Program Struct,C,"Howell,Rodney R",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1114,1:30 PM,3:20 PM,Y,N,Y,N,Y,N,N,3,3,LAB
+CIS,301,Log Foundatn/Progrmg,A,"Hatcliff,John",No Special Consent Required,100, ,8/20/2018,12/7/2018,DUR1073,9:30 AM,10:45 AM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,308,C Language Lab,A,"Coleman,Ashley",No Special Consent Required,50, ,8/20/2018,12/7/2018,DUE1114,3:00 PM,4:50 PM,N,Y,N,N,N,N,N,1,1,LAB
+CIS,308,C Language Lab,B,"Coleman,Ashley",No Special Consent Required,50, ,8/20/2018,12/7/2018,DUE1114,1:00 PM,2:50 PM,N,Y,N,N,N,N,N,1,1,LAB
+CIS,415,Ethics and Computing Tech,A,"Lang,Dennis J",No Special Consent Required,40, ,8/20/2018,12/7/2018,DU1029,2:30 PM,4:20 PM,N,N,N,Y,N,N,N,1,1,REC
+CIS,415,Ethics and Computing Tech,ZA,"Lang,Dennis J",No Special Consent Required,70, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,1,1,REC
+CIS,450,Cmptr Arch/Operation,A,"Neilsen,Mitchell L",No Special Consent Required,52, ,8/20/2018,12/7/2018,DUE1114,8:30 AM,9:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,490,Top/Computer Science,A,"DeLoach,Scott A",Instructor Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,490,Top/Computer Science,H,"Hsu,William Henry",No Special Consent Required,20,Top/Intr PRG Big Data Anlytics,8/20/2018,12/7/2018,DUE1116,12:30 PM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,490,Top/Computer Science,E,"Munir,Arslan",No Special Consent Required,30,Top/Security/Reliab of Cmp Sys,8/20/2018,12/7/2018,BB2103,5:30 PM,6:45 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,490,Top/Computer Science,D,"Chowdhury,Chandan",No Special Consent Required,25,Top/Cyber Defense Basics I,8/20/2018,12/7/2018,DUE1117,7:30 PM,8:50 PM,Y,N,N,N,N,N,N,1,1,REC
+CIS,490,Top/Computer Science,Q,"Amariucai,George",No Special Consent Required,30,Top/Applied Info Security Rsch,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,3,3,IND
+CIS,497,Undergraduate Research Exp,A,"DeLoach,Scott A",Instructor Consent Required,100, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,0,3,RSH
+CIS,499,Honors Res/Thesis,A,"DeLoach,Scott A",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,2,4,IND
+CIS,501,Software Arch/Design,A,"Valenzuela,Jorge Luis",No Special Consent Required,50, ,8/20/2018,12/7/2018,DUE1114,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,501,Software Arch/Design,S,"DeLoach,Scott A",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1117,12:30 PM,1:45 PM,Y,N,Y,N,N,N,N,3,3,REC
+CIS,505,Intro Program Lang,A,"Amtoft,Torben",No Special Consent Required,85, ,8/20/2018,12/7/2018,DUF1107,8:30 AM,9:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,525,Intro Computer Networks,A,"Vasserman,Eugene Y",No Special Consent Required,50, ,8/20/2018,12/7/2018,DUR1052,2:30 PM,3:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,527,Enterprise Systems Admin,ZA,"Feldhausen,Russell A",No Special Consent Required,40,,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,530,Intro Art Intellignc,A,"Hsu,William Henry",No Special Consent Required,50, ,8/20/2018,12/7/2018,JU109,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,551,Intro Comp and Info Security,A,"Amariucai,George",No Special Consent Required,35, ,8/20/2018,12/7/2018,DUE0093,3:55 PM,5:10 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,560,Database Syst Concep,A,"Keller,John T",No Special Consent Required,120, ,8/20/2018,12/7/2018,DUF1107,11:30 AM,12:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,562,Enterprise Info Syst,A,"Keller,John T",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUF1107,11:30 AM,12:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,580,Fundamental Game Programming,A,"Bean,Nathan H",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUE1116,11:30 AM,12:20 PM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,595,IS Cooperative Internship,A,"Weese,Joshua Levi",No Special Consent Required,20, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,4,INT
+CIS,597,Info Systems Project,A,"Neilsen,Mitchell L",No Special Consent Required,23, ,8/20/2018,12/7/2018,DU1029,3:30 PM,4:20 PM,Y,N,Y,N,Y,N,N,3,3,IND
+CIS,598,Computer Sci Project,A,"Neilsen,Mitchell L",No Special Consent Required,24, ,8/20/2018,12/7/2018,DU1029,3:30 PM,4:20 PM,Y,N,Y,N,Y,N,N,3,3,IND
+CIS,625,Concur Software Sys,A,"Andresen,Daniel A",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,10:30 AM,11:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,642,Software Engr Proj 1,A,"Bean,Nathan H",No Special Consent Required,35, ,8/20/2018,12/7/2018,DUE1116,1:30 PM,3:20 PM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,655,Adv Comp Arch,A,"Munir,Arslan",No Special Consent Required,30, ,8/20/2018,12/7/2018,BB2103,1:30 PM,2:20 PM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,690,Implementation Projects,A,"Amtoft,Torben",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,B,"Andresen,Daniel A",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,C,"Caragea,Doina",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,D,"Caragea,Cornelia Alexandra",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,E,"DeLoach,Scott A",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,F,"Amariucai,George",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,G,"Bean,Nathan H",No Special Consent Required,10,Top/Multiplatform Project,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,H,"Howell,Rodney R",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,I,"Hsu,William Henry",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,J,"Mizuno,Masaaki",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,K,"Neilsen,Mitchell L",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,L,"Munir,Arslan",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,M,"Robby,-",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,N,"Ranganath,Venkatesh",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,O,"Prabhakar,Pavithra",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,P,"Vasserman,Eugene Y",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,690,Implementation Projects,Q,"Weese,Joshua Levi",No Special Consent Required,10, ,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,3,3,IND
+CIS,705,Programming Lang,A,"Amtoft,Torben",No Special Consent Required,25, ,8/20/2018,12/7/2018,DUF1107,8:30 AM,9:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,706,Translator Design 1,A,"Robby,-",No Special Consent Required,15,,8/20/2018,12/7/2018,K214,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,721,Real-Time Systems,A,"Neilsen,Mitchell L",No Special Consent Required,40, ,8/20/2018,12/7/2018,DUE1116,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,LEC
+CIS,721,Real-Time Systems,ZA,"Neilsen,Mitchell L",No Special Consent Required,30, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,730,Artificial Intellign,A,"Hsu,William Henry",No Special Consent Required,20, ,8/20/2018,12/7/2018,JU109,9:30 AM,10:20 AM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,730,Artificial Intellign,ZA,"Hsu,William Henry",No Special Consent Required,20, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,730,Artificial Intellign,ZB,"Hsu,William Henry",No Special Consent Required,20, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,751,Cmptr/Inf Security,A,"Amariucai,George",No Special Consent Required,25, ,8/20/2018,12/7/2018,DUE0093,3:55 PM,5:10 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,751,Cmptr/Inf Security,ZA,"Amariucai,George",No Special Consent Required,20, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,771,Software Specificatn,A,"Robby,-",No Special Consent Required,30, ,8/20/2018,12/7/2018,D207,9:30 AM,10:45 AM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,771,Software Specificatn,ZA,"Robby,-",No Special Consent Required,25, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,775,Analysis/Algorithms,A,"Amtoft,Torben",No Special Consent Required,30, ,8/20/2018,12/7/2018,DUR1061,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,798,Top/Computer Science,A,"Amtoft,Torben",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,B,"Andresen,Daniel A",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,C,"Caragea,Doina",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,E,"DeLoach,Scott A",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,G,"Hatcliff,John",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,H,"Howell,Rodney R",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,J,"Mizuno,Masaaki",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,K,"Neilsen,Mitchell L",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,L,"Munir,Arslan",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,M,"Robby,-",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,N,"Ranganath,Venkatesh",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,O,"Prabhakar,Pavithra",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,P,"Vasserman,Eugene Y",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,S,"Hsu,William Henry",No Special Consent Required,20,Top/Adv PRG Big Data Anlytics,8/20/2018,12/7/2018,DUE1116,12:30 PM,1:20 PM,Y,N,Y,N,Y,N,N,3,3,REC
+CIS,798,Top/Computer Science,Q,"Weese,Joshua Levi",No Special Consent Required,10,Top/Vary By Student,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,18,IND
+CIS,798,Top/Computer Science,R,"Munir,Arslan",No Special Consent Required,18,Top/Security/Reliab of Cmp Sys,8/20/2018,12/7/2018,BB2103,5:30 PM,6:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,801,Translator Design 2,A,"Robby,-",No Special Consent Required,10,,8/20/2018,12/7/2018,K214,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,833,Info Retrieval & Text Mining,A,"Caragea,Cornelia Alexandra",No Special Consent Required,20, ,8/20/2018,12/7/2018,DUE1117,11:30 AM,12:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
+CIS,833,Info Retrieval & Text Mining,ZA,"Caragea,Cornelia Alexandra",No Special Consent Required,20, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,833,Info Retrieval & Text Mining,ZB,"Caragea,Cornelia Alexandra",No Special Consent Required,30, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,LEC
+CIS,841,Verificatn/Validatn,A,"Ranganath,Venkatesh",Instructor Consent Required,20, ,8/20/2018,12/7/2018,zzzzzz,3:55 PM,5:10 PM,N,Y,N,Y,N,N,N,3,3,REC
+CIS,841,Verificatn/Validatn,ZA,"Ranganath,Venkatesh",Instructor Consent Required,25, ,8/20/2018,12/7/2018,DISTANCE,,,N,N,N,N,N,N,N,3,3,REC
+CIS,890,Top/Computer Science,T,"Prabhakar,Pavithra",No Special Consent Required,20,Top/Analy Cyber-Phys Sys,8/20/2018,12/7/2018,DUR1069,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,IND
+CIS,890,Top/Computer Science,U,"Hsu,William Henry",No Special Consent Required,5,Top/KDD: Data Sci/Analytics,8/20/2018,12/7/2018, ,12:00 AM,12:00 AM,N,N,N,N,N,N,N,1,4,IND
+CIS,890,Top/Computer Science,Q,"Amariucai,George",No Special Consent Required,10,Top/Adv Info Security Rsch,8/20/2018,12/7/2018, ,,,N,N,N,N,N,N,N,3,3,IND

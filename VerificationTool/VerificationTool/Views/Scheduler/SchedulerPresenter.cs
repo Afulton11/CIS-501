@@ -39,11 +39,14 @@ namespace VerificationTool.Views.Scheduler
         {
             // we need to subscribe to the view's events, but there is never any need to unsubscribe as this presenter
             // lives for the same time as the view. (until the application ends)
+            view.AboutEvent += (_, __) => OnAbout();
             view.ClearEvent += (_, __) => OnClear();
             view.ReloadEvent += (_, __) => OnReload();
             view.LoadLocalScheduleEvent += (_, __) => OnLoadLocalSchedule();
             view.VerifySchedulesEvent += (_, __) => OnVerifySchedules();
         }
+
+        private void OnAbout() => WriteLine("SVT Version 0.2.3. Last updated on 12/5/2018. Thanks for using SVT!");
 
         private void OnClear()
         {
@@ -55,7 +58,6 @@ namespace VerificationTool.Views.Scheduler
 
         private void OnReload()
         {
-            viewModel.WriteLine("OnReload();");
             localSchedule = ReadSchedule(viewModel.LocalPath);
             remoteSchedule = ReadSchedule(viewModel.RemotePath);
 
@@ -77,7 +79,7 @@ namespace VerificationTool.Views.Scheduler
 
         private void OnVerifySchedules()
         {
-            var remoteFilepath = RetrieveFilepath("Choose a Remote File");                
+            var remoteFilepath = RetrieveFilepath("Choose a Remote File");
             var schedule = ReadSchedule(remoteFilepath);
 
             if (schedule != null)
@@ -90,23 +92,23 @@ namespace VerificationTool.Views.Scheduler
 
         private Schedule ReadSchedule(string filepath)
         {
-            //try
+            try
             {
                 if (IsValidFile(filepath))
                     return scheduleReader.Read(filepath);
                 else
-                    viewModel.WriteLine("[ERROR]: Please select a valid file.");
+                    WriteLine("[ERROR]: Please select a valid file.");
             }
-            //catch (IOException)
-            //{
-            //    // could also be a permissions issue, but it most likely isnt.
-            //    viewModel.WriteLine("[ERROR]: Unable to access file! Please make sure it is not in use.");
-            //}
-            //catch (InvalidFileFormatException exception)
-            //{
-            //    viewModel.WriteLine(exception.Message);
-            //    throw exception;
-            //}
+            catch (IOException)
+            {
+                // could also be a permissions issue, but it most likely isnt.
+                WriteLine("[ERROR]: Unable to access file! Please make sure it is not in use.");
+            }
+            catch (InvalidFileFormatException exception)
+            {
+                WriteLine(exception.Message);
+                throw exception;
+            }
             return null;
         }
 
@@ -131,21 +133,20 @@ namespace VerificationTool.Views.Scheduler
         {
             bool DidError = false;
 
-            viewModel.WriteLine("Local schedule :");
-            viewModel.WriteLine(StringUtility.ScheduleToString(localSchedule));
-            viewModel.WriteLine("Remote schedule :");
-            viewModel.WriteLine(StringUtility.ScheduleToString(remoteSchedule));
             foreach (var constraint in scheduleConstraints)
             {
                 if (!constraint.Verify(localSchedule, remoteSchedule))
                 {
-                    viewModel.WriteLine(constraint.Error);
+                    Write(constraint.Error);
                     DidError = true;
                 }
             }
 
             if (!DidError)
-                viewModel.WriteLine("The local and remote schedules were successfully verified!");
+                WriteLine("The local and remote schedules were successfully verified!");
         }
+
+        private void WriteLine(string line) => viewModel.ConsoleText = StringUtility.AddLine(viewModel.ConsoleText, line);
+        private void Write(string s) => viewModel.ConsoleText += s;
     }
 }

@@ -11,43 +11,41 @@ namespace VerificationTool.Verification.Constraints.Impl
 {
     public class LocalSectionsRequired : ScheduleConstraint
     {
-        private SectionErrorMessage errorMessage = new SectionErrorMessage("is new in the current semester!");
-        private IDictionary<Course, IEnumerable<string>> localCourseMap = new Dictionary<Course, IEnumerable<string>>(CourseComparer.Instance);
-        private IDictionary<Course, IEnumerable<string>> remoteCourseMap = new Dictionary<Course, IEnumerable<string>>(CourseComparer.Instance);
+        private SectionErrorMessage errorMessage = new SectionErrorMessage(">>", "is new in the current semester!");
+        private ISet<Course> localCourseSet = new HashSet<Course>(SimpleCourseComparer.Instance);
+        private ISet<Course> remoteCourseSet = new HashSet<Course>(SimpleCourseComparer.Instance);
 
         protected override string getErrorMessage() => errorMessage.ToString();
 
         protected override bool Test(Schedule local, Schedule remote)
         {
             errorMessage.Clear();
-            PopulateMaps(local.Courses, remote.Courses);
+            PopulateSets(local.Courses, remote.Courses);
 
-            foreach (var localEntry in localCourseMap)
-                foreach (var localSection in localEntry.Value)
-                    if (!DoesSectionExistRemotely(localEntry.Key, localSection))
-                        errorMessage.AddSection(localEntry.Key, localSection);
+            foreach (var localCourse in localCourseSet)
+                foreach (var localSection in localCourse.Sections)
+                    if (!DoesSectionExistRemotely(localCourse, localSection))
+                        errorMessage.AddSection(localCourse, localSection.SectionNumber);
 
             return !errorMessage.HasErrors();
         }
 
-        private void PopulateMaps(IEnumerable<Course> localCourses, IEnumerable<Course> remoteCourses)
+        private void PopulateSets(IEnumerable<Course> localCourses, IEnumerable<Course> remoteCourses)
         {
-            PopulateMap(localCourses, localCourseMap);
-            PopulateMap(remoteCourses, remoteCourseMap);
+            PopulateSet(localCourses, localCourseSet);
+            PopulateSet(remoteCourses, remoteCourseSet);
         }
 
-        private void PopulateMap(IEnumerable<Course> courses, IDictionary<Course, IEnumerable<string>> map)
+        private void PopulateSet(IEnumerable<Course> courses, ISet<Course> map)
         {
             map.Clear();
             foreach (var course in courses)
-            {
-                var sectionNumbers = course.Sections.Select(section => section.SectionNumber);
-                map.Add(course, sectionNumbers);
-            }
+                map.Add(course);
         }
 
-        private bool DoesSectionExistRemotely(Course localCourse, string localSectionNumber) =>
-            remoteCourseMap.ContainsKey(localCourse)
-            && remoteCourseMap[localCourse].Any(remoteSectionNumber => remoteSectionNumber == localSectionNumber);
+        private bool DoesSectionExistRemotely(Course localCourse, Section localSection) =>
+            remoteCourseSet.Contains(localCourse)
+            && remoteCourseSet.Any(course => 
+                course.Sections.Any(remoteSection => remoteSection.SectionNumber == localSection.SectionNumber));
     }
 }

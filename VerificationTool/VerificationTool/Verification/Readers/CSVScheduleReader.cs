@@ -18,9 +18,9 @@ namespace VerificationTool.Verification.Readers
         private static readonly char[] NAME_YEAR_SEPARATORS = new char[] { ' ', ',' };
 
         private string filename;
-        private IDictionary<Course, IList<Section>> courseMap = new Dictionary<Course, IList<Section>>(CourseComparer.Instance);
-        private IDictionary<Instructor, IList<Section>> instructorMap = new Dictionary<Instructor, IList<Section>>(InstructorComparer.Instance);
-        private IDictionary<Facility, IList<Section>> facilityMap = new Dictionary<Facility, IList<Section>>(FacilityComparer.Instance);
+        private IDictionary<Course, IList<Section>> courseMap = new Dictionary<Course, IList<Section>>(SimpleCourseComparer.Instance);
+        private IDictionary<Instructor, IList<Section>> instructorMap = new Dictionary<Instructor, IList<Section>>(SimpleInstructorComparer.Instance);
+        private IDictionary<Facility, IList<Section>> facilityMap = new Dictionary<Facility, IList<Section>>(SimpleFacilityComparer.Instance);
 
 
         public Schedule Read(string filepath)
@@ -59,9 +59,9 @@ namespace VerificationTool.Verification.Readers
             
             semester.Schedule = ReadSections(lines);
 
-            IEnumerable<Course> courses = FlattenCourseMap();
-            IEnumerable<Instructor> instructors = FlattenInstructorMap();
-            IEnumerable<Facility> facilities = FlattenFacilityMap();
+            IEnumerable<Course> courses = FlattenCourseMap().ToList();
+            IEnumerable<Instructor> instructors = FlattenInstructorMap().ToList();
+            IEnumerable<Facility> facilities = FlattenFacilityMap().ToList();
 
             return new Schedule()
             {
@@ -130,17 +130,26 @@ namespace VerificationTool.Verification.Readers
 
         private Section ReadSection(string line)
         {
-            string[] entries = line.Split(CSV_SEPARATORS);
+            var entryList = line.Split(CSV_SEPARATORS).ToList();
 
-            if (entries.Length < SECTION_ENTRY_COUNT)
+            if (entryList.Count == SECTION_ENTRY_COUNT + 1)
+            {
+                // combine the name split.
+                var fullName = entryList[4] + entryList[5];
+                entryList.RemoveRange(4, 2);
+                entryList.Insert(4, fullName);
+            }
+
+            var entries = entryList.ToArray();
+
+            if (entries.Length != SECTION_ENTRY_COUNT)
                 throw new InvalidFileFormatException(filename, FILETYPE);
 
             var courseKey = ReadCourse(entries);
             var instructorKey = ReadInstructor(entries);
             var facilityKey = ReadFacility(entries);
             var section = ReadSection(entries);
-
-            AddCourseSection(courseKey, section, entries[2]);
+            
             AddInstructorSection(instructorKey, section);
             AddFacilitySection(facilityKey, section);
 
@@ -152,12 +161,13 @@ namespace VerificationTool.Verification.Readers
             {
                 Subject = entries[0],
                 CatalogNbr = entries[1],
+                ClassDescr = entries[2],
             };
 
         private Instructor ReadInstructor(string[] entries) =>
             new Instructor()
             {
-                Name = entries[3],
+                Name = entries[4],
             };
 
         private Facility ReadFacility(string[] entries)
@@ -211,13 +221,12 @@ namespace VerificationTool.Verification.Readers
 
         private bool ReadBool(string value) => value.Equals("Y", StringComparison.OrdinalIgnoreCase);
 
-        private void AddCourseSection(Course key, Section section, string classDescr)
+        private void AddCourseSection(Course key, Section section)
         {
             if (courseMap.ContainsKey(key))
                 courseMap[key].Add(section);
             else
             {
-                key.ClassDescr = classDescr;
                 courseMap.Add(key, new List<Section>() { section });
             }
         }

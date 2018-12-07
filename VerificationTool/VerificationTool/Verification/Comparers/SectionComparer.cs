@@ -19,7 +19,8 @@ namespace VerificationTool.Verification.Comparers
             && x.Consent == y.Consent
             && x.EnrlCap == y.EnrlCap
             && x.TopicDescr == y.TopicDescr
-            && x.MeetingStartDt == y.MeetingEndDt
+            && x.MeetingStartDt == y.MeetingStartDt
+            && x.MeetingEndDt == y.MeetingEndDt
             && x.MeetingStartTime == y.MeetingStartTime
             && x.MeetingEndTime == y.MeetingEndTime
             && Enumerable.SequenceEqual(x.days, y.days)

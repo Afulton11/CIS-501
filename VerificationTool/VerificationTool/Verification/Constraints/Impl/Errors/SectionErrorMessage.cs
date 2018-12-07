@@ -12,7 +12,14 @@ namespace VerificationTool.Verification.Constraints.Impl.Errors
     public class SectionErrorMessage
     {
         private readonly IDictionary<Course, IList<string>> errorMap = new Dictionary<Course, IList<string>>(CourseComparer.Instance);
-        private readonly string messageSuffix;
+        private readonly string messagePrefix, messageSuffix;
+
+
+        public SectionErrorMessage(string messagePrefix, string messageSuffix)
+        {
+            this.messagePrefix = messagePrefix;
+            this.messageSuffix = messageSuffix;
+        }
 
         public SectionErrorMessage(string messageSuffix)
         {
@@ -20,7 +27,6 @@ namespace VerificationTool.Verification.Constraints.Impl.Errors
         }
 
         public bool HasErrors() => errorMap.Count > 0;
-
         public void Clear() => errorMap.Clear();
 
         public void AddSection(Course key, string section)
@@ -59,6 +65,8 @@ namespace VerificationTool.Verification.Constraints.Impl.Errors
         private StringBuilder FormatSection(Course course, string sectionNumber)
         {
             var builder = new StringBuilder();
+            builder.Append(messagePrefix);
+            builder.Append(' ');
             builder.Append(StringUtility.BuildSectionStringPrefix(course, sectionNumber));
             builder.Append(' ');
             builder.Append(messageSuffix);

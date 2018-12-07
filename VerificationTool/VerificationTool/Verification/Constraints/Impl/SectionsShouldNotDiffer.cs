@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using VerificationTool.Entities;
 using VerificationTool.Verification.Comparers;
@@ -39,6 +38,7 @@ namespace VerificationTool.Verification.Constraints.Impl
             PopulateInstructorMap(localInstructorMap, local.Instructors);
             PopulateInstructorMap(remoteInstructorMap, remote.Instructors);
             PopulateFacilityMap(localFacilityMap, local.Facilities);
+            PopulateFacilityMap(remoteFacilityMap, remote.Facilities);
         }
 
         private void PopulateSet(ISet<Course> set, IEnumerable<Course> courses)
@@ -54,11 +54,6 @@ namespace VerificationTool.Verification.Constraints.Impl
             foreach (var instructor in instructors)
                 foreach (var section in instructor.Sections)
                     map.Add(section, instructor);
-
-            foreach (var kvp in map)
-            {
-                Console.WriteLine($"{kvp.Key.MeetingStartTime}:{kvp.Key.SectionNumber}:{kvp.Value.Name}");
-            }
         }
 
         private void PopulateFacilityMap(IDictionary<Section, Facility> map, IEnumerable<Facility> facilities)
@@ -76,19 +71,11 @@ namespace VerificationTool.Verification.Constraints.Impl
                 var remoteCourse = remoteCourseSet.Single(course => SimpleCourseComparer.Instance.Equals(course, localCourse));
                 var remoteSection = remoteCourse.Sections.First(section => section.SectionNumber == localSection.SectionNumber);
 
-                if (remoteCourse.CatalogNbr == "643" && remoteSection.SectionNumber == "A" || remoteSection.SectionNumber == "ZA")
-                {
-                    Console.WriteLine(
-$@"
-{remoteSection.MeetingStartTime}
-{remoteSection.MeetingEndDt}
-{remoteSection.TopicDescr}
-");
-                }
 
                 return !SectionComparer.Instance.Equals(localSection, remoteSection)
                      || HasInstructorChanged(localSection, remoteSection)
-                     || HasFacilityChanged(localSection, remoteSection);
+                     || HasFacilityChanged(localSection, remoteSection)
+                     || localCourse.ClassDescr != remoteCourse.ClassDescr;
             }
 
             return false;
@@ -107,14 +94,13 @@ $@"
 
         private bool HasFacilityChanged(Section local, Section remote)
         {
-            //bool localFacilityExists = localFacilityMap.ContainsKey(local);
-            //bool remoteFacilityExists = remoteFacilityMap.ContainsKey(remote);
+            bool localFacilityExists = localFacilityMap.ContainsKey(local);
+            bool remoteFacilityExists = remoteFacilityMap.ContainsKey(remote);
 
-            //if (localFacilityExists && remoteFacilityExists)
-            //    return !SimpleFacilityComparer.Instance.Equals(localFacilityMap[local], remoteFacilityMap[remote]);
-            //else
-            //    return localFacilityExists ^ remoteFacilityExists;
-            return false;
+            if (localFacilityExists && remoteFacilityExists)
+                return !SimpleFacilityComparer.Instance.Equals(localFacilityMap[local], remoteFacilityMap[remote]);
+            else
+                return localFacilityExists ^ remoteFacilityExists;
         }
     }
 }

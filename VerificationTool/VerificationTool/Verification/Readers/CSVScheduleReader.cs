@@ -149,7 +149,8 @@ namespace VerificationTool.Verification.Readers
             var instructorKey = ReadInstructor(entries);
             var facilityKey = ReadFacility(entries);
             var section = ReadSection(entries);
-            
+
+            AddCourseSection(courseKey, section, entries[2]);
             AddInstructorSection(instructorKey, section);
             AddFacilitySection(facilityKey, section);
 
@@ -161,7 +162,6 @@ namespace VerificationTool.Verification.Readers
             {
                 Subject = entries[0],
                 CatalogNbr = entries[1],
-                ClassDescr = entries[2],
             };
 
         private Instructor ReadInstructor(string[] entries) =>
@@ -221,12 +221,13 @@ namespace VerificationTool.Verification.Readers
 
         private bool ReadBool(string value) => value.Equals("Y", StringComparison.OrdinalIgnoreCase);
 
-        private void AddCourseSection(Course key, Section section)
+        private void AddCourseSection(Course key, Section section, string classDescr)
         {
             if (courseMap.ContainsKey(key))
                 courseMap[key].Add(section);
             else
             {
+                key.ClassDescr = classDescr;
                 courseMap.Add(key, new List<Section>() { section });
             }
         }

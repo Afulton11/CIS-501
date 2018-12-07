@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Security.Permissions;
 using VerificationTool.Entities;
 using VerificationTool.utilities;
 using VerificationTool.Verification.Constraints;

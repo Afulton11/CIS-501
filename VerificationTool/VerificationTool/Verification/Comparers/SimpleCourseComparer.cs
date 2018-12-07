@@ -17,8 +17,7 @@ namespace VerificationTool.Verification.Comparers
 
         public override bool Equals(Course x, Course y) =>
             x.Subject == y.Subject
-            && x.CatalogNbr == y.CatalogNbr
-            && x.ClassDescr == y.ClassDescr;
+            && x.CatalogNbr == y.CatalogNbr;
 
         public override int GetHashCode(Course obj) => obj.Subject.GetHashCode() + obj.CatalogNbr.GetHashCode();
     }

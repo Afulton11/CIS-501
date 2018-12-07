@@ -4,7 +4,7 @@ namespace VerificationTool.Entities
 {
     public class Instructor
     {
-        public string Name { get; }
-        public IList<Section> Sections { get; }
+        public string Name { get; set;  }
+        public IList<Section> Sections { get; set; }
     }
 }

@@ -2,17 +2,17 @@
 {
     public class Section
     {
-        string SectionNumber { get; }
-        string Consent { get; }
-        string EnrlCap { get; }
-        string TopicDescr { get; }
-        string MeetingStartDt { get; }
-        string MeetingEndDt { get; }
-        string MeetingStartTime { get; }
-        string MeetingEndTime { get; }
-        bool[] days { get; } = new bool[7];
-        string UnitsMin { get; }
-        string UnitsMax { get; }
-        string ClassAssn { get; }
+        public string SectionNumber { get; set; }
+        public string Consent { get; set; }
+        public string EnrlCap { get; set; }
+        public string TopicDescr { get; set; }
+        public string MeetingStartDt { get; set; }
+        public string MeetingEndDt { get; set; }
+        public string MeetingStartTime { get; set; }
+        public string MeetingEndTime { get; set; }
+        public bool[] days { get; set; }
+        public string UnitsMin { get; set; }
+        public string UnitsMax { get; set; }
+        public string ClassAssn { get; set; }
     }
 }

@@ -58,9 +58,15 @@
     <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\Facility.cs" />
     <Compile Include="Entities\Instructor.cs" />
+    <Compile Include="Entities\Schedule.cs" />
     <Compile Include="Entities\Section.cs" />
     <Compile Include="Entities\Semester.cs" />
     <Compile Include="utilities\StringUtility.cs" />
+    <Compile Include="Verification\Comparers\CourseComparer.cs" />
+    <Compile Include="Verification\Comparers\FacilityComparer.cs" />
+    <Compile Include="Verification\Comparers\InstructorComparer.cs" />
+    <Compile Include="Verification\Comparers\SectionComparer.cs" />
+    <Compile Include="Verification\Constraints\Impl\Errors\SectionErrorMessage.cs" />
     <Compile Include="Verification\Constraints\Impl\LocalSectionsRequired.cs" />
     <Compile Include="Verification\Constraints\Impl\RemoteSectionsRequired.cs" />
     <Compile Include="Verification\Constraints\Impl\SectionsShouldNotDiffer.cs" />

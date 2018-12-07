@@ -37,6 +37,6 @@ namespace VerificationTool.Views.Scheduler
 
         private bool CanVerifySchedules() => !string.IsNullOrEmpty(ViewModel.LocalPath);
 
-        private void OnAbout() => ViewModel.ConsoleText = StringUtility.AddLine(ViewModel.ConsoleText, "SVT Version 0.2.3. Last updated on 12/5/2018. Thanks for using SVT!");
+        private void OnAbout() => ViewModel.WriteLine("SVT Version 0.2.3. Last updated on 12/5/2018. Thanks for using SVT!");
     }
 }

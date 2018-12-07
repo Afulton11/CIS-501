@@ -4,6 +4,6 @@ namespace VerificationTool.Verification.Readers
 {
     public interface IScheduleReader
     {
-        Semester Read(string filepath);
+        Schedule Read(string filepath);
     }
 }

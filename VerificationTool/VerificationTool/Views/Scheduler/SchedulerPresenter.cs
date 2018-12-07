@@ -2,9 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Permissions;
 using VerificationTool.Entities;
+using VerificationTool.utilities;
 using VerificationTool.Verification.Constraints;
 using VerificationTool.Verification.Readers;
+using VerificationTool.Verification.Readers.Exceptions;
 
 namespace VerificationTool.Views.Scheduler
 {
@@ -15,7 +18,7 @@ namespace VerificationTool.Views.Scheduler
         private readonly IScheduleReader scheduleReader;
         private readonly IEnumerable<IScheduleConstraint> scheduleConstraints;
 
-        private Semester localSchedule, remoteSchedule;
+        private Schedule localSchedule, remoteSchedule;
 
         public SchedulerPresenter(
             ISchedulerViewModel viewModel,
@@ -62,13 +65,13 @@ namespace VerificationTool.Views.Scheduler
 
         private void OnLoadLocalSchedule()
         {
-            var localFilepath = RetrieveFilepath("Choose a Remote File");
+            var localFilepath = RetrieveFilepath("Choose a Local File");
             var schedule = ReadSchedule(localFilepath);
 
             if (schedule != null)
             {
                 localSchedule = schedule;
-                viewModel.RemotePath = localFilepath;
+                viewModel.LocalPath = localFilepath;
             }
         }
 
@@ -85,18 +88,32 @@ namespace VerificationTool.Views.Scheduler
             }
         }
 
-        private Semester ReadSchedule(string filepath)
+        private Schedule ReadSchedule(string filepath)
         {
-            if (IsValidFile(filepath))
-                return scheduleReader.Read(filepath);
-            else
+            //try
             {
-                viewModel.WriteLine("[ERROR]: Please select a valid file.");
-                return null;
+                if (IsValidFile(filepath))
+                    return scheduleReader.Read(filepath);
+                else
+                    viewModel.WriteLine("[ERROR]: Please select a valid file.");
             }
+            //catch (IOException)
+            //{
+            //    // could also be a permissions issue, but it most likely isnt.
+            //    viewModel.WriteLine("[ERROR]: Unable to access file! Please make sure it is not in use.");
+            //}
+            //catch (InvalidFileFormatException exception)
+            //{
+            //    viewModel.WriteLine(exception.Message);
+            //    throw exception;
+            //}
+            return null;
         }
 
-        private bool IsValidFile(string filepath) => !string.IsNullOrEmpty(filepath) && File.Exists(filepath);
+        private bool IsValidFile(string filepath) =>
+            !string.IsNullOrEmpty(filepath)
+            && File.Exists(filepath);
+            
 
         private string RetrieveFilepath(string title)
         {
@@ -113,6 +130,11 @@ namespace VerificationTool.Views.Scheduler
         private void VerifySchedules()
         {
             bool DidError = false;
+
+            viewModel.WriteLine("Local schedule :");
+            viewModel.WriteLine(StringUtility.ScheduleToString(localSchedule));
+            viewModel.WriteLine("Remote schedule :");
+            viewModel.WriteLine(StringUtility.ScheduleToString(remoteSchedule));
             foreach (var constraint in scheduleConstraints)
             {
                 if (!constraint.Verify(localSchedule, remoteSchedule))

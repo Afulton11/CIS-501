@@ -7,6 +7,6 @@ namespace VerificationTool.Entities
         public string Subject { get; set; }
         public string CatalogNbr { get; set; }
         public string ClassDescr { get; set; }
-        public List<Section> Sections { get; set; }
+        public IList<Section> Sections { get; set; }
     }
 }

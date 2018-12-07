@@ -6,7 +6,7 @@ namespace VerificationTool.Verification.Constraints
     {
         public string Error { get; private set; }
 
-        public bool Verify(Semester local, Semester remote)
+        public bool Verify(Schedule local, Schedule remote)
         {
             if (Test(local, remote))
                 return true;
@@ -17,7 +17,7 @@ namespace VerificationTool.Verification.Constraints
             }
         }
 
-        protected abstract bool Test(Semester local, Semester remote);
+        protected abstract bool Test(Schedule local, Schedule remote);
 
         protected abstract string getErrorMessage();
 

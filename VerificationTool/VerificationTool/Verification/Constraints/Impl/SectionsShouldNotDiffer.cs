@@ -7,34 +7,15 @@ namespace VerificationTool.Verification.Constraints.Impl
 {
     public class SectionsShouldNotDiffer : ScheduleConstraint
     {
-
         private ErrorMessage error;
 
-        protected override string getErrorMessage() => error?.ToString();
+        protected override string getErrorMessage() => nameof(SectionsShouldNotDiffer);
 
-        protected override bool Test(Semester local, Semester remote)
+        protected override bool Test(Schedule local, Schedule remote)
         {
-            var localSchedule = local.Schedule;
-            var remoteSchedule = remote.Schedule;
-
-            //return TestSections(localSchedule, remoteSchedule);
-            
-            return false;
-        }
-
-        private bool TestSections(IList<Course> localSchedule, IList<Section> remoteSchedule)
-        {
-            foreach (var localCourse in localSchedule)
-            {
-                foreach (var remoteCourse in remoteSchedule)
-                {
-                    
-                }
-            }
 
             return false;
         }
-
 
         private class ErrorMessage
         {
@@ -50,5 +31,6 @@ namespace VerificationTool.Verification.Constraints.Impl
                 return null;
             }
         }
+        
     }
 }

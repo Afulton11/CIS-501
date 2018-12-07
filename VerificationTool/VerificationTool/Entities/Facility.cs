@@ -1,8 +1,12 @@
-﻿namespace VerificationTool.Entities
+﻿using System.Collections.Generic;
+
+namespace VerificationTool.Entities
 {
     public class Facility
     {
-        string Building { get; set; }
-        string Room { get; set; }
+        public string Building { get; set; }
+        public string Room { get; set; }
+
+        public IList<Section> Sections { get; set; }
     }
 }

@@ -1,14 +1,14 @@
 Spring 2019,,,,,,,,,,,,,,,,,,,,,,
 Subject,CatalogNbr,ClassDescr,Section,Instructor,Consent,EnrlCap,TopicDescr,MeetingStartDt,MeetingEndDt,FacilityId,MeetingTimeStart,MeetingTimeEnd,Mon,Tues,Wed,Thurs,Fri,Sat,Sun,UnitsMin,UnitsMax,ClassAssnComponent
 CIS,111,Intro to Comp Program,A,"Thornton,Julie A",No Special Consent Required,28, ,1/22/2019,3/8/2019,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
-CIS,111,Intro to Comp Program,B,"Thornton,Julie A",No Special Consent Required,27, ,3/18/2019,5/10/2019,DUE1113,0:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
-CIS,111,Intro to Comp Program,ZA,"Thornton,Julie A",No Special Consent Required,30, ,1/22/2019,3/8/2019,DISTANCE,,,Y,N,N,N,N,N,N,3,0,LAB
+CIS,111,Intro to Comp Program,B,"Thornton,Julie A",No Special Consent Required,27, ,3/18/2019,5/10/2019,DUE1113,4:30 PM,6:20 PM,N,Y,N,Y,N,N,N,3,3,LAB
+CIS,111,Intro to Comp Program,ZA,"Thornton,Julie A",No Special Consent Required,30, ,1/22/2019,3/8/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
 CIS,111,Intro to Comp Program,ZB,"Thornton,Julie A",No Special Consent Required,35, ,3/18/2019,5/10/2019,DISTANCE,,,N,N,N,N,N,N,N,3,3,LAB
 CIS,115,Intro to Computing Science,A,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,8:05 AM,9:20 AM,N,Y,N,Y,N,N,N,3,3,LEC
 CIS,115,Intro to Computing Science,B,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,2:30 PM,3:45 PM,N,Y,N,Y,N,N,N,3,3,LEC
 CIS,115,Intro to Computing Science,C,"Weese,Joshua Levi",No Special Consent Required,40, ,1/22/2019,5/10/2019,DUE1116,11:00 AM,12:15 PM,N,Y,N,Y,N,N,N,3,3,LEC
 CIS,200,Programming Fundamentals,01L,"Lang,Dennis J",No Special Consent Required,185, ,1/22/2019,5/10/2019,DUR1073,1:05 PM,2:20 PM,N,Y,N,Y,N,N,N,0,0, 
-CIS,200,Programming Fundamentals,A,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2018,DUE1114,2:30 PM,4:20 PM,N,N,N,Y,N,N,N,4,4,LAB
+CIS,200,Programming Fundamentals,A,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,2:30 PM,4:20 PM,N,N,N,Y,N,N,N,4,4,LAB
 CIS,200,Programming Fundamentals,B,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,4:30 PM,6:20 PM,N,N,N,Y,N,N,N,4,4,LAB
 CIS,200,Programming Fundamentals,C,"Lang,Dennis J",No Special Consent Required,50, ,1/22/2019,5/10/2019,DUE1114,3:30 PM,5:20 PM,N,N,N,N,Y,N,N,4,4,LAB
 CIS,209,C Programming/Engg,A,"Valenzuela,Jorge Luis",No Special Consent Required,30, ,1/22/2019,5/10/2019,DUE1114,8:05 AM,10:55 AM,N,Y,N,N,N,N,N,3,3,LAB

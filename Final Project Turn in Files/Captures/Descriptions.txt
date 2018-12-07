@@ -1,0 +1,37 @@
+STARTUP:
+
+	This is how the program looks as it is started up. The text boxes are empty.
+
+ABOUT:
+
+	After the 'about' menu is selected, the about text is output to the console text box.	
+
+LOCAL FILE LOADED:
+
+	After the 'File->Load File...' menu item is selected, the user is prompted with a file selection
+	dialog (They may only select csv files). If the user selects a valid file, it will be read in
+	and the filepath displayed upon completion in the 'local:' textbox. If an error occurs during read,
+	the error will be outputted to the console.
+
+VERIFICATION RESULT:
+
+	After the 'File->Verify...' menu item is selected, the user is prompted with a file selection dialog.
+	This menu item is only accessible after a local file has been loaded. Once the user selects a valid
+	"remote" file, the remote file is loaded in as a remote schedule and if there are no errors,
+	The local and remote files are verified. Any errors during verification are output to the console.
+	Otherwise, a success message is printed.
+
+CLEAR:
+
+	The user has selected the 'Clear' Button in the top-right. This clears the filepath text boxes
+	and removes the loaded schedules from memory.
+
+RELOAD BUTTON:
+	
+	Reloads the local and remote schedules using the filepaths shown in the textboxes, provided they
+	are still valid files. Once they have both been successfully read in again, the two will be 
+	verified again and the output of the verification process outputted to the console.
+
+
+NOTE:
+	The black bar at the top of the captures is from the WPF visual debugger. It is not a part of the program.
